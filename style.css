@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    padding:  175px 10px 10px 75px;
+    background-color: rgb(248, 175, 175);
+    
+  }
+ 
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+.heart{
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.heart:before,
+.heart:after{ 
+    content: "";
+    position: absolute;
+    left: 890px;
+    top: 315px;
+    width: 50px;
+    height: 80px;
+    background: #CC3E3E;
+    border-radius: 50px 50px 0;
+    transform-origin: 0 100%;
+    transform: rotate(-45deg);
+}
+.heart:after{
+    left: 840px;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.4);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.4);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the heart shape */
+.heart {
+  animation: heartbeat 5.3s infinite;
+}
+
+.headingtext {
+    width: 1000px;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.headingtext1 {
+    color: rgb(128, 65, 106);
+}
+
+
+.mainbutton {
+height: 50px;
+width: 70px;
+}
